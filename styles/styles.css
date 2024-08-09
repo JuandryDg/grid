@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 8% 90% 5%;
+    grid-template-areas: 
+    "nav nav "
+    "aside main "
+    "footer footer ";
+     height: 100vh;
+  
+}
+
+nav{
+    background-color: rgb(250, 149, 187);
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    background-color: rgb(200, 180, 155);
+    grid-area: aside;
+    background-image: url(../img/tienda.png);
+    background-size:cover;
+    background-position:center;
+    
+}
+    
+    
+
+main{
+    background-color: #e6e5e5;
+    grid-area: main ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+footer{
+    background-color:  rgb(252, 134, 179);
+    grid-area: footer;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style:normal;
+    font-size: 15px;
+    color: rgb(254, 251, 253);
+    text-align: center;
+    padding-top: 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    
+    
+}
+
+
+.img-text{
+    background-image: url(../img/foto1.jpg);
+    width:15rem;
+    height: 20rem;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10%;
+   
+}
+.img-text2{
+    background-image: url(../img/foto3.jpg);
+    width:15rem;
+    height: 20rem;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10%;
+    display: flex;
+    
+}
+.img-text3{
+    background-image: url(../img/foto4.jpg);
+    width:16rem;
+    height: 20rem;
+    background-size:contain;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+.img-text4{
+    background-image: url(../img/foto5.jpg);
+    width:15rem;
+    height: 18rem;
+    background-size:cover;
+    text-align: center;
+    border-radius: 10%;  
+}
+
+.img-text, .img-text2,.img-text3,.img-text4{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    
+}
+.btn-comprar{
+    background-color:rgb(78, 76, 73);
+    color: white;
+    width: 65%;
+   
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+   justify-content:space-evenly;
+   color: rgb(86, 84, 84);
+}
+.titulo {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style:normal;
+  font-size: 60px;
+  color: rgb(254, 251, 253);
+}
+
+nav img{
+    width: 5rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
